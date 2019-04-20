@@ -18,7 +18,7 @@ public class Palindrome {
    }
    
    
-   public static long reverseNum(long num) {
+   private static long reverseNum(long num) {
       
       long tempNum = num;
       long divisor = 1;
@@ -45,13 +45,13 @@ public class Palindrome {
       
       return outNum;
    }
-   public static boolean checkPalindrome(long num) {
+   private static boolean checkPalindrome(long num) {
       
       if (reverseNum(num) == num) return true;
       else return false;
    }
    
-   public static boolean checkLychrel(long num) {
+   private static boolean checkLychrel(long num) {
       
       boolean state = false;
       int iteration = 0;
